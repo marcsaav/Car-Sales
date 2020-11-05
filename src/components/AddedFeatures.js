@@ -1,4 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux'
+
+import { mapStateToProps } from '../reducers'
 
 import AddedFeature from './AddedFeature';
 
@@ -19,4 +22,4 @@ const AddedFeatures = props => {
   );
 };
 
-export default AddedFeatures;
+export default connect(mapStateToProps)(AddedFeatures);
